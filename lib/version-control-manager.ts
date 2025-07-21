@@ -1,3 +1,4 @@
+"use client";
 import { fabric } from "fabric";
 import {
   type VersionControlCommit,

@@ -1,4 +1,10 @@
-import { CanvasEditor } from "@/components/canvas-editor"
+import dynamic from 'next/dynamic';
+
+const CanvasEditor = dynamic(async () => (await import('@/components/canvas-editor')).default, {
+  ssr: false,
+});
+
+
 
 export default function Home() {
   return (
